@@ -10,9 +10,4 @@ This warning is not displayed if you download the project as a zip file.
 ![Screenshot 2021-08-15 014720](https://user-images.githubusercontent.com/87282960/129462822-69bdde67-bec3-49fb-adb6-875ba2269b97.jpg)
 
 Kaspersky Threat Intelligence Portal:https://opentip.kaspersky.com/FCBBE400968A1779B2F8479E77EF28889390A4F7F2F58A3C766B10C52E39732D/
-
-Source Code:
---IniFile.cs: https://pastebin.com/4vQ5xujs
---Form1.cs: https://pastebin.com/Fmmd46sy
-
 Have a nice day😁
