@@ -13,6 +13,6 @@ Kaspersky Threat Intelligence Portal:https://opentip.kaspersky.com/FCBBE400968A1
 
 Source Code:
 --IniFile.cs: https://pastebin.com/4vQ5xujs
---Form1.cs: https://pastebin.com/Fmmd46sy
+--Form1.cs: https://pastebin.com/TF4VSBjt
 
 Have a nice day😁
