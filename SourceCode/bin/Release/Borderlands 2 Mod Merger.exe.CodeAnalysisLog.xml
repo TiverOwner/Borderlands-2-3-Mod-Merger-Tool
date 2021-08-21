@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2019\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="16.0">
+ <Targets>
+  <Target Name="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger\bin\Release\Borderlands 2 Mod Merger.exe">
+   <Modules>
+    <Module Name="borderlands 2 mod merger.exe">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Signieren Sie "'Borderlands 2 Mod Merger.exe'" mit einem Schlüssel mit starkem Namen.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">Markieren Sie "'Borderlands 2 Mod Merger.exe'" mit CLSCompliant(true), da so extern sichtbare Typen verfügbar gemacht werden.</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Warning">Da die Assembly 'Borderlands 2 Mod Merger.exe' eine ResX-basierte Ressourcendatei enthält, markieren Sie sie mit dem NeutralResourcesLanguage-Attribut, und geben Sie die Sprache der Ressourcen innerhalb der Assembly an. Möglicherweise wird so die Suchleistung beim ersten Abrufen einer Ressource gesteigert.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="BL2ModMerger">
+       <Types>
+        <Type Name="Form1" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="44">Ersetzen Sie den Aufruf von 'string.Equals(string)' in 'Form1.Form1()' durch einen Aufruf von String.IsNullOrEmpty.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddFileButton_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="156">Ändern Sie "'Form1.AddFileButton_Click(object, EventArgs)'", damit eine spezifischere Ausnahme als "'Exception'" abgefangen wird, oder lösen Sie die Ausnahme erneut aus.</Issue>
+            </Message>
+            <Message Id="System.Console.WriteLine(System.String,System.Object)" TypeName="Literale nicht als lokalisierte Parameter übergeben" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="158">Die Methode "'Form1.AddFileButton_Click(object, EventArgs)'" übergibt eine Literalzeichenfolge als Parameter "format" eines Aufrufs von 'Console.WriteLine(string, object)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "The application had a error: {0}".</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="Literale nicht als lokalisierte Parameter übergeben" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="85">Die Methode "'Form1.AddFileButton_Click(object, EventArgs)'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "     ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="87">Die Methode "'Form1.AddFileButton_Click(object, EventArgs)'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "     ".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="103">Die Methode "'Form1.AddFileButton_Click(object, EventArgs)'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: ".".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="93">Die Methode "'Form1.AddFileButton_Click(object, EventArgs)'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "BL2".</Issue>
+            </Message>
+            <Message TypeName="Objekte verwerfen, bevor Bereich verloren geht" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="136">Rufen Sie in der 'Form1.AddFileButton_Click(object, EventArgs)'-Methode System.IDisposable.Dispose für das Objekt "'new StreamReader(Form1.FilePath)'" auf, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="131">Rufen Sie in der 'Form1.AddFileButton_Click(object, EventArgs)'-Methode System.IDisposable.Dispose für das Objekt "'new StreamReader(this.ofd.FileName)'" auf, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="141">Rufen Sie in der 'Form1.AddFileButton_Click(object, EventArgs)'-Methode System.IDisposable.Dispose für das Objekt "'new StreamWriter(Form1.FilePath, false)'" auf, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen.</Issue>
+            </Message>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="96">Da das Verhalten von 'string.ToLower()' je nach den Gebietsschemaeinstellungen des aktuellen Benutzers unterschiedlich sein kann, sollten Sie diesen Aufruf in 'Form1.AddFileButton_Click(object, EventArgs)' durch einen Aufruf von 'string.ToLower(CultureInfo)' ersetzen. Das Ergebnis von 'string.ToLower(CultureInfo)' wird dem Benutzer angezeigt. Geben Sie CultureInfo.CurrentCulture als CultureInfo-Parameter an. Wenn das Ergebnis gespeichert und von Software genutzt wird, beispielsweise beim dauerhaften Speichern auf der Festplatte oder in einer Datenbank, geben Sie CultureInfo.InvariantCulture an.</Issue>
+            </Message>
+            <Message Id="System.String.LastIndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="76">Da das Verhalten von 'string.LastIndexOf(string)' basierend auf den aktuellen Gebietsschemaeinstellungen des Benutzers variieren könnte, ersetzen Sie diesen Aufruf in 'Form1.AddFileButton_Click(object, EventArgs)' durch einen Aufruf von 'string.LastIndexOf(string, StringComparison)'. Wenn das Ergebnis von 'string.LastIndexOf(string, StringComparison)' dem Benutzer angezeigt wird, z.B. beim Sortieren einer Liste von Elementen zur Anzeige in einem Listenfeld, geben Sie "StringComparison.CurrentCulture" oder "StringComparison.CurrentCultureIgnoreCase" als StringComparison-Parameter an. Geben Sie beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung nicht beachtet wird, z.B. Dateipfade, Umgebungsvariablen oder Registrierungsschlüsseln und -werten, "StringComparison.OrdinalIgnoreCase" an. Geben Sie andernfalls beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung beachtet wird, "StringComparison.Ordinal" an.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="79">Da das Verhalten von 'string.LastIndexOf(string)' basierend auf den aktuellen Gebietsschemaeinstellungen des Benutzers variieren könnte, ersetzen Sie diesen Aufruf in 'Form1.AddFileButton_Click(object, EventArgs)' durch einen Aufruf von 'string.LastIndexOf(string, StringComparison)'. Wenn das Ergebnis von 'string.LastIndexOf(string, StringComparison)' dem Benutzer angezeigt wird, z.B. beim Sortieren einer Liste von Elementen zur Anzeige in einem Listenfeld, geben Sie "StringComparison.CurrentCulture" oder "StringComparison.CurrentCultureIgnoreCase" als StringComparison-Parameter an. Geben Sie beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung nicht beachtet wird, z.B. Dateipfade, Umgebungsvariablen oder Registrierungsschlüsseln und -werten, "StringComparison.OrdinalIgnoreCase" an. Geben Sie andernfalls beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung beachtet wird, "StringComparison.Ordinal" an.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="119">Da das Verhalten von 'string.LastIndexOf(string)' basierend auf den aktuellen Gebietsschemaeinstellungen des Benutzers variieren könnte, ersetzen Sie diesen Aufruf in 'Form1.AddFileButton_Click(object, EventArgs)' durch einen Aufruf von 'string.LastIndexOf(string, StringComparison)'. Wenn das Ergebnis von 'string.LastIndexOf(string, StringComparison)' dem Benutzer angezeigt wird, z.B. beim Sortieren einer Liste von Elementen zur Anzeige in einem Listenfeld, geben Sie "StringComparison.CurrentCulture" oder "StringComparison.CurrentCultureIgnoreCase" als StringComparison-Parameter an. Geben Sie beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung nicht beachtet wird, z.B. Dateipfade, Umgebungsvariablen oder Registrierungsschlüsseln und -werten, "StringComparison.OrdinalIgnoreCase" an. Geben Sie andernfalls beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung beachtet wird, "StringComparison.Ordinal" an.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="122">Da das Verhalten von 'string.LastIndexOf(string)' basierend auf den aktuellen Gebietsschemaeinstellungen des Benutzers variieren könnte, ersetzen Sie diesen Aufruf in 'Form1.AddFileButton_Click(object, EventArgs)' durch einen Aufruf von 'string.LastIndexOf(string, StringComparison)'. Wenn das Ergebnis von 'string.LastIndexOf(string, StringComparison)' dem Benutzer angezeigt wird, z.B. beim Sortieren einer Liste von Elementen zur Anzeige in einem Listenfeld, geben Sie "StringComparison.CurrentCulture" oder "StringComparison.CurrentCultureIgnoreCase" als StringComparison-Parameter an. Geben Sie beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung nicht beachtet wird, z.B. Dateipfade, Umgebungsvariablen oder Registrierungsschlüsseln und -werten, "StringComparison.OrdinalIgnoreCase" an. Geben Sie andernfalls beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung beachtet wird, "StringComparison.Ordinal" an.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="101">Ersetzen Sie den Aufruf von 'string.operator !=(string, string)' in 'Form1.AddFileButton_Click(object, EventArgs)' durch einen Aufruf von String.IsNullOrEmpty.</Issue>
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="91">Ersetzen Sie den Aufruf von 'string.operator ==(string, string)' in 'Form1.AddFileButton_Click(object, EventArgs)' durch einen Aufruf von String.IsNullOrEmpty.</Issue>
+            </Message>
+            <Message Id="FileName" TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Name="Local" Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="67">"'FileName'", eine in "'Form1.AddFileButton_Click(object, EventArgs)'" deklarierte Variable, weist denselben Namen wie ein Instanzenfeld für den Typ auf. Ändern Sie den Namen eines dieser Elemente.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.DateTime.ToString(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Name="IFormatProviderAlternateString" Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="303">Da das Verhalten von 'DateTime.ToString(string)' basierend auf den aktuellen Gebietsschemaeinstellungen des Benutzers variieren könnte, ersetzen Sie diesen Aufruf in 'Form1.button1_Click(object, EventArgs)' durch einen Aufruf von 'DateTime.ToString(string, IFormatProvider)'. Wenn das Ergebnis von 'DateTime.ToString(string, IFormatProvider)' dem Benutzer angezeigt wird, geben Sie "'CultureInfo.CurrentCulture'" als IFormatProvider-Parameter an. Wenn das Ergebnis gespeichert wird und die Software darauf zugreift, z.B. wenn es auf einem Datenträger oder in einer Datenbank gespeichert wird, geben Sie "'CultureInfo.InvariantCulture'" an.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExtensionBox_TextChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="265">Ersetzen Sie den Aufruf von 'string.operator !=(string, string)' in 'Form1.ExtensionBox_TextChanged(object, EventArgs)' durch einen Aufruf von String.IsNullOrEmpty.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetFileInfo()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="Literale nicht als lokalisierte Parameter übergeben" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="245">Die Methode "'Form1.GetFileInfo()'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: ".".</Issue>
+            </Message>
+            <Message TypeName="Objekte verwerfen, bevor Bereich verloren geht" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="254">In 'Form1.GetFileInfo()'-Methode wird das Objekt "'new StreamReader(this.OutputFolderPath + "\\" + this.NameBox.Text + this.ExtensionBox.Text)'" nicht entlang allen Ausnahmepfaden verworfen. Rufen Sie System.IDisposable.Dispose für das Objekt "'new StreamReader(this.OutputFolderPath + "\\" + this.NameBox.Text + this.ExtensionBox.Text)'" auf, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="243">Ersetzen Sie den Aufruf von 'string.operator !=(string, string)' in 'Form1.GetFileInfo()' durch einen Aufruf von String.IsNullOrEmpty.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InitializeComponent()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="Literale nicht als lokalisierte Parameter übergeben" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.Designer.cs" Line="50">Die Methode "'Form1.InitializeComponent()'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "Add File".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.Designer.cs" Line="151">Die Methode "'Form1.InitializeComponent()'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "Borderlands 2/3 Mod Merger".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.Designer.cs" Line="130">Die Methode "'Form1.InitializeComponent()'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "Create Zip".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.Designer.cs" Line="104">Die Methode "'Form1.InitializeComponent()'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "File extension:".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.Designer.cs" Line="87">Die Methode "'Form1.InitializeComponent()'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "File name:".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.Designer.cs" Line="122">Die Methode "'Form1.InitializeComponent()'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "FileStatus:".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.Designer.cs" Line="68">Die Methode "'Form1.InitializeComponent()'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "Remove File".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#NameBox_TextChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="233">Ersetzen Sie den Aufruf von 'string.operator !=(string, string)' in 'Form1.NameBox_TextChanged(object, EventArgs)' durch einen Aufruf von String.IsNullOrEmpty.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RemoveFileButton_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Replace(System.String,System.String)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Name="StringCreation" Certainty="95" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="219">'Form1.RemoveFileButton_Click(object, EventArgs)' ruft 'string.Replace(string, string)' auf, verwendet aber die neue Zeichenfolgeninstanz nicht, die von der Methode zurückgegeben wird. Übergeben Sie die Instanz als Argument an eine andere Methode, weisen Sie die Instanz einer Variablen zu, oder entfernen Sie ggf. die Objekterstellung, wenn sie nicht erforderlich ist.</Issue>
+             <Issue Name="StringCreation" Certainty="95" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="220">'Form1.RemoveFileButton_Click(object, EventArgs)' ruft 'string.Replace(string, string)' auf, verwendet aber die neue Zeichenfolgeninstanz nicht, die von der Methode zurückgegeben wird. Übergeben Sie die Instanz als Argument an eine andere Methode, weisen Sie die Instanz einer Variablen zu, oder entfernen Sie ggf. die Objekterstellung, wenn sie nicht erforderlich ist.</Issue>
+            </Message>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="Literale nicht als lokalisierte Parameter übergeben" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="182">Die Methode "'Form1.RemoveFileButton_Click(object, EventArgs)'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: ".".</Issue>
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="168">Die Methode "'Form1.RemoveFileButton_Click(object, EventArgs)'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "BL2".</Issue>
+            </Message>
+            <Message TypeName="Objekte verwerfen, bevor Bereich verloren geht" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="211">In 'Form1.RemoveFileButton_Click(object, EventArgs)'-Methode wird das Objekt "'new StreamReader(Form1.FilePath)'" nicht entlang allen Ausnahmepfaden verworfen. Rufen Sie System.IDisposable.Dispose für das Objekt "'new StreamReader(Form1.FilePath)'" auf, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen.</Issue>
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="206">In 'Form1.RemoveFileButton_Click(object, EventArgs)'-Methode wird das Objekt "'new StreamReader(this.ofdDelete.FileName)'" nicht entlang allen Ausnahmepfaden verworfen. Rufen Sie System.IDisposable.Dispose für das Objekt "'new StreamReader(this.ofdDelete.FileName)'" auf, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen.</Issue>
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="215">In 'Form1.RemoveFileButton_Click(object, EventArgs)'-Methode wird das Objekt "'new StreamWriter(Form1.FilePath, false)'" nicht entlang allen Ausnahmepfaden verworfen. Rufen Sie System.IDisposable.Dispose für das Objekt "'new StreamWriter(Form1.FilePath, false)'" auf, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen.</Issue>
+            </Message>
+            <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="170">Da das Verhalten von 'string.ToLower()' je nach den Gebietsschemaeinstellungen des aktuellen Benutzers unterschiedlich sein kann, sollten Sie diesen Aufruf in 'Form1.RemoveFileButton_Click(object, EventArgs)' durch einen Aufruf von 'string.ToLower(CultureInfo)' ersetzen. Das Ergebnis von 'string.ToLower(CultureInfo)' wird dem Benutzer angezeigt. Geben Sie CultureInfo.CurrentCulture als CultureInfo-Parameter an. Wenn das Ergebnis gespeichert und von Software genutzt wird, beispielsweise beim dauerhaften Speichern auf der Festplatte oder in einer Datenbank, geben Sie CultureInfo.InvariantCulture an.</Issue>
+            </Message>
+            <Message Id="System.String.LastIndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="189">Da das Verhalten von 'string.LastIndexOf(string)' basierend auf den aktuellen Gebietsschemaeinstellungen des Benutzers variieren könnte, ersetzen Sie diesen Aufruf in 'Form1.RemoveFileButton_Click(object, EventArgs)' durch einen Aufruf von 'string.LastIndexOf(string, StringComparison)'. Wenn das Ergebnis von 'string.LastIndexOf(string, StringComparison)' dem Benutzer angezeigt wird, z.B. beim Sortieren einer Liste von Elementen zur Anzeige in einem Listenfeld, geben Sie "StringComparison.CurrentCulture" oder "StringComparison.CurrentCultureIgnoreCase" als StringComparison-Parameter an. Geben Sie beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung nicht beachtet wird, z.B. Dateipfade, Umgebungsvariablen oder Registrierungsschlüsseln und -werten, "StringComparison.OrdinalIgnoreCase" an. Geben Sie andernfalls beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung beachtet wird, "StringComparison.Ordinal" an.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="192">Da das Verhalten von 'string.LastIndexOf(string)' basierend auf den aktuellen Gebietsschemaeinstellungen des Benutzers variieren könnte, ersetzen Sie diesen Aufruf in 'Form1.RemoveFileButton_Click(object, EventArgs)' durch einen Aufruf von 'string.LastIndexOf(string, StringComparison)'. Wenn das Ergebnis von 'string.LastIndexOf(string, StringComparison)' dem Benutzer angezeigt wird, z.B. beim Sortieren einer Liste von Elementen zur Anzeige in einem Listenfeld, geben Sie "StringComparison.CurrentCulture" oder "StringComparison.CurrentCultureIgnoreCase" als StringComparison-Parameter an. Geben Sie beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung nicht beachtet wird, z.B. Dateipfade, Umgebungsvariablen oder Registrierungsschlüsseln und -werten, "StringComparison.OrdinalIgnoreCase" an. Geben Sie andernfalls beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung beachtet wird, "StringComparison.Ordinal" an.</Issue>
+            </Message>
+            <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="180">Ersetzen Sie den Aufruf von 'string.operator !=(string, string)' in 'Form1.RemoveFileButton_Click(object, EventArgs)' durch einen Aufruf von String.IsNullOrEmpty.</Issue>
+             <Issue Name="IsNullOrEmpty" Certainty="95" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="166">Ersetzen Sie den Aufruf von 'string.operator ==(string, string)' in 'Form1.RemoveFileButton_Click(object, EventArgs)' durch einen Aufruf von String.IsNullOrEmpty.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SelectOutput()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.FolderBrowserDialog.set_Description(System.String)" TypeName="Literale nicht als lokalisierte Parameter übergeben" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="57">Die Methode "'Form1.SelectOutput()'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'FolderBrowserDialog.Description.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "Select file Output folder".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetFileName()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Windows.Forms.Control.set_Text(System.String)" TypeName="Literale nicht als lokalisierte Parameter übergeben" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="293">Die Methode "'Form1.SetFileName()'" übergibt eine Literalzeichenfolge als Parameter "value" eines Aufrufs von 'Control.Text.set(string)'. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: "\r\n ".</Issue>
+            </Message>
+            <Message TypeName="Objekte verwerfen, bevor Bereich verloren geht" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="275">In 'Form1.SetFileName()'-Methode wird das Objekt "'new StreamReader(this.OutputFolderPath + "\\" + this.NameBox.Text + this.ExtensionBox.Text)'" nicht entlang allen Ausnahmepfaden verworfen. Rufen Sie System.IDisposable.Dispose für das Objekt "'new StreamReader(this.OutputFolderPath + "\\" + this.NameBox.Text + this.ExtensionBox.Text)'" auf, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen.</Issue>
+            </Message>
+            <Message Id="System.String.LastIndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="280">Da das Verhalten von 'string.LastIndexOf(string)' basierend auf den aktuellen Gebietsschemaeinstellungen des Benutzers variieren könnte, ersetzen Sie diesen Aufruf in 'Form1.SetFileName()' durch einen Aufruf von 'string.LastIndexOf(string, StringComparison)'. Wenn das Ergebnis von 'string.LastIndexOf(string, StringComparison)' dem Benutzer angezeigt wird, z.B. beim Sortieren einer Liste von Elementen zur Anzeige in einem Listenfeld, geben Sie "StringComparison.CurrentCulture" oder "StringComparison.CurrentCultureIgnoreCase" als StringComparison-Parameter an. Geben Sie beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung nicht beachtet wird, z.B. Dateipfade, Umgebungsvariablen oder Registrierungsschlüsseln und -werten, "StringComparison.OrdinalIgnoreCase" an. Geben Sie andernfalls beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung beachtet wird, "StringComparison.Ordinal" an.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="281">Da das Verhalten von 'string.LastIndexOf(string)' basierend auf den aktuellen Gebietsschemaeinstellungen des Benutzers variieren könnte, ersetzen Sie diesen Aufruf in 'Form1.SetFileName()' durch einen Aufruf von 'string.LastIndexOf(string, StringComparison)'. Wenn das Ergebnis von 'string.LastIndexOf(string, StringComparison)' dem Benutzer angezeigt wird, z.B. beim Sortieren einer Liste von Elementen zur Anzeige in einem Listenfeld, geben Sie "StringComparison.CurrentCulture" oder "StringComparison.CurrentCultureIgnoreCase" als StringComparison-Parameter an. Geben Sie beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung nicht beachtet wird, z.B. Dateipfade, Umgebungsvariablen oder Registrierungsschlüsseln und -werten, "StringComparison.OrdinalIgnoreCase" an. Geben Sie andernfalls beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung beachtet wird, "StringComparison.Ordinal" an.</Issue>
+             <Issue Certainty="95" Level="Error" Path="C:\Users\Jonas\source\repos\Borderlands 2 Mod Merger\Borderlands 2 Mod Merger" File="Form1.cs" Line="282">Da das Verhalten von 'string.LastIndexOf(string)' basierend auf den aktuellen Gebietsschemaeinstellungen des Benutzers variieren könnte, ersetzen Sie diesen Aufruf in 'Form1.SetFileName()' durch einen Aufruf von 'string.LastIndexOf(string, StringComparison)'. Wenn das Ergebnis von 'string.LastIndexOf(string, StringComparison)' dem Benutzer angezeigt wird, z.B. beim Sortieren einer Liste von Elementen zur Anzeige in einem Listenfeld, geben Sie "StringComparison.CurrentCulture" oder "StringComparison.CurrentCultureIgnoreCase" als StringComparison-Parameter an. Geben Sie beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung nicht beachtet wird, z.B. Dateipfade, Umgebungsvariablen oder Registrierungsschlüsseln und -werten, "StringComparison.OrdinalIgnoreCase" an. Geben Sie andernfalls beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung beachtet wird, "StringComparison.Ordinal" an.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#USER" Kind="Field" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="UseLiteralsWhereAppropriate" Category="Microsoft.Performance" CheckId="CA1802" Status="Active" Created="2021-08-20 21:13:41Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Warning">Das Feld "'Form1.USER'" ist als "static readonly" deklariert, wird jedoch mit dem konstanten Wert "DEBUG" initialisiert. Markieren Sie dieses Feld stattdessen als "const".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblys müssen gültige starke Namen aufweisen</Name>
+   <Description>Entweder verfügt die Assembly nicht über einen starken Namen, über einen ungültigen Namen, oder der starke Name ist nur aufgrund der Computerkonfiguration gültig. In diesem Zustand sollte die Assembly nicht bereitgestellt werden. Die häufigsten Ursachen hierfür sind: 1) Der Inhalt der Assembly wurde nach der Signierung geändert. 2) Bei der Signierung ist ein Fehler aufgetreten. 3) Die Assembly wurde verzögert signiert. 4) Es war ein Registrierungsschlüssel vorhanden, der eine erfolgreiche Überprüfung ermöglichte, die andernfalls nicht möglich gewesen wäre.</Description>
+   <Resolution Name="NoStrongName">Signieren Sie "{0}" mit einem Schlüssel mit starkem Namen.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>Allgemeine Ausnahmetypen nicht auffangen</Name>
+   <Description>Exception oder SystemException sollte nicht aufgefangen werden. Durch das Auffangen generischer Ausnahmetypen werden dem Benutzer einer Bibliothek Probleme zur Laufzeit möglicherweise nicht angezeigt. Dadurch wird das Debugging behindert. Fangen Sie nur Ausnahmen auf, die Sie problemlos behandeln können.</Description>
+   <Resolution Name="Default">Ändern Sie "{0}", damit eine spezifischere Ausnahme als "{1}" abgefangen wird, oder lösen Sie die Ausnahme erneut aus.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182137.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806">
+   <Name>Methodenergebnisse nicht ignorieren</Name>
+   <Description>Das Ergebnis von Methoden, die neue Instanzen von Zeichenfolgen zurückgeben, sollte einer Variablen zugewiesen und anschließend verwendet werden. Wenn das Ergebnis einer Methode, die ein neues Objekt erstellt, z.B. String.ToLower(), keiner Variablen zugewiesen wird, geht der Aufruf verloren.</Description>
+   <Resolution Name="StringCreation">{0} ruft {1} auf, verwendet aber die neue Zeichenfolgeninstanz nicht, die von der Methode zurückgegeben wird. Übergeben Sie die Instanz als Argument an eine andere Methode, weisen Sie die Instanz einer Variablen zu, oder entfernen Sie ggf. die Objekterstellung, wenn sie nicht erforderlich ist.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182273.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="usagerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="Literale nicht als lokalisierte Parameter übergeben" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Literale nicht als lokalisierte Parameter übergeben</Name>
+   <Description>Literalzeichenfolgen, die in Quellcode eingebettet sind, sind schwer zu lokalisieren. Übergeben Sie keine Literalzeichenfolgen als Argumente in Fällen, in denen im Allgemeinen eine lokalisierte Zeichenfolge erwartet wird.</Description>
+   <Resolution Name="KnownValue">Die Methode "{0}" übergibt eine Literalzeichenfolge als Parameter "{1}" eines Aufrufs von {2}. Rufen Sie die folgende(n) Zeichenfolge(n) stattdessen von einer Ressourcentabelle ab: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>Assemblys mit CLSCompliantAttribute markieren</Name>
+   <Description>Bei Assemblys muss die CLS-Kompatibilität mithilfe des CLSCompliant-Atttributs explizit angegeben werden. Eine Assembly ohne dieses Attribut ist nicht CLS-kompatibel. Assemblys, Module und Typen können selbst dann CLS-kompatibel sein, wenn einige Komponenten der Assembly, des Moduls oder des Typs nicht CLS-kompatibel sind. Es gelten die folgenden Regeln: 1. Wenn das Element als CLSCompliant markiert ist, müssen alle nicht kompatiblen Member das CLSCompliant-Attribut aufweisen, und das Argument muss auf "False" festgelegt sein. 2. Ein vergleichbarer alternativer CLS-kompatibler Member muss für jeden nicht CLS-kompatiblen Member zur Verfügung gestellt werden.</Description>
+   <Resolution Name="Default">Markieren Sie "{0}" mit CLSCompliant(true), da so extern sichtbare Typen verfügbar gemacht werden.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182156.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="designrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+   <Name>Assemblys mit NeutralResourcesLanguageAttribute markieren</Name>
+   <Description>Das NeutralResourcesLanguage-Attribute informiert den ResourceManager der Sprache, die zum Rendern der Ressourcen der neutralen Kultur für eine Assembly verwendet wird. Bei der Suche nach Ressourcen in der Kultur, die auch von der neutralen Ressourcensprache verwendet wird, verwendet der ResourceManager automatisch die Ressourcen in der Hauptassembly und sucht nicht nach einer Satellitenassembly mit der Kultur der aktuellen Benutzeroberfläche für den aktuellen Thread. Auf diese Weise wird die Suchleistung für die erste geladene Ressource gesteigert und die Anzahl der Arbeitsseiten reduziert.</Description>
+   <Resolution Name="Default">Da die Assembly {0} eine ResX-basierte Ressourcendatei enthält, markieren Sie sie mit dem NeutralResourcesLanguage-Attribut, und geben Sie die Sprache der Ressourcen innerhalb der Assembly an. Möglicherweise wird so die Suchleistung beim ersten Abrufen einer Ressource gesteigert.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb385967.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="Objekte verwerfen, bevor Bereich verloren geht" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Objekte verwerfen, bevor Bereich verloren geht</Name>
+   <Description>Wenn ein verwerfbares Objekt nicht explizit verworfen wird, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen, wird das Objekt zu einer unbestimmten Zeit verworfen, wenn der Garbage Collector den Finalizer des Objekts ausführt. Da möglicherweise ein Ausnahmeereignis auftritt, durch das die Ausführung des Finalizers des Objekts verhindert wird, muss das Objekt stattdessen explizit verworfen werden.</Description>
+   <Resolution Name="ExceptionEdge">In {0}-Methode wird das Objekt "{1}" nicht entlang allen Ausnahmepfaden verworfen. Rufen Sie System.IDisposable.Dispose für das Objekt "{1}" auf, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen.</Resolution>
+   <Resolution Name="NonExceptionEdge">Rufen Sie in der {0}-Methode System.IDisposable.Dispose für das Objekt "{1}" auf, bevor alle Verweise darauf außerhalb des gültigen Bereichs liegen.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304">
+   <Name>CultureInfo angeben</Name>
+   <Description>Wenn eine Überladung vorhanden ist, die CultureInfo als Argument verwendet, sollte diese bevorzugt anstelle einer Überladung aufgerufen werden, bei der dies nicht der Fall ist. Der CultureInfo-Typ enthält kulturspezifische Informationen, die für das Durchführen von numerischen Operationen und Zeichenfolgenoperationen erforderlich sind, z. B. Groß- und Kleinschreibung, Formatierung und Zeichenfolgenvergleiche. Geben Sie CultureInfo.InvariantCulture in Szenarien an, in denen sich das Konvertierungs- und Analyseverhalten zwischen Kulturen nie ändern soll, und geben Sie anderenfalls CultureInfo.CurrentCulture an.</Description>
+   <Resolution Name="Default">Da das Verhalten von {0} je nach den Gebietsschemaeinstellungen des aktuellen Benutzers unterschiedlich sein kann, sollten Sie diesen Aufruf in {1} durch einen Aufruf von {2} ersetzen. Das Ergebnis von {2} wird dem Benutzer angezeigt. Geben Sie CultureInfo.CurrentCulture als CultureInfo-Parameter an. Wenn das Ergebnis gespeichert und von Software genutzt wird, beispielsweise beim dauerhaften Speichern auf der Festplatte oder in einer Datenbank, geben Sie CultureInfo.InvariantCulture an.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182189.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>IFormatProvider angeben</Name>
+   <Description>Wenn eine Überladung vorhanden ist, die IFormatProvider als Argument verwendet, sollte diese bevorzugt anstelle einer Überladung aufgerufen werden, bei der dies nicht der Fall ist. Einige Methoden in der Laufzeit konvertieren einen Wert in eine oder aus einer Zeichenfolgendarstellung und akzeptieren einen Zeichenfolgenparameter mit einem oder mehreren Zeichen, die Formatbezeichner genannt werden und die Art der Konvertierung des Werts angeben. Wenn die Bedeutung des Formatbezeichners je nach Kultur variiert, werden die tatsächlich in der Zeichenfolgendarstellung verwendeten Zeichen von einem Formatierungsobjekt bereitgestellt. In Szenarien, in denen das Sortierungs- und Vergleichsverhalten bei verschiedenen Kulturen nicht variieren darf, geben Sie CultureInfo.InvariantCulture an, und anderenfalls geben Sie CultureInfo.CurrentCulture an.</Description>
+   <Resolution Name="IFormatProviderAlternateString">Da das Verhalten von {0} basierend auf den aktuellen Gebietsschemaeinstellungen des Benutzers variieren könnte, ersetzen Sie diesen Aufruf in {1} durch einen Aufruf von {2}. Wenn das Ergebnis von {2} dem Benutzer angezeigt wird, geben Sie "{3}" als IFormatProvider-Parameter an. Wenn das Ergebnis gespeichert wird und die Software darauf zugreift, z.B. wenn es auf einem Datenträger oder in einer Datenbank gespeichert wird, geben Sie "{4}" an.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182190.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307">
+   <Name>StringComparison angeben</Name>
+   <Description>Wenn eine Überladung vorhanden ist, die StringComparison als Argument verwendet, sollte diese bevorzugt anstelle einer Überladung aufgerufen werden, bei der dies nicht der Fall ist.</Description>
+   <Resolution Name="Default">Da das Verhalten von {0} basierend auf den aktuellen Gebietsschemaeinstellungen des Benutzers variieren könnte, ersetzen Sie diesen Aufruf in {1} durch einen Aufruf von {2}. Wenn das Ergebnis von {2} dem Benutzer angezeigt wird, z.B. beim Sortieren einer Liste von Elementen zur Anzeige in einem Listenfeld, geben Sie "StringComparison.CurrentCulture" oder "StringComparison.CurrentCultureIgnoreCase" als StringComparison-Parameter an. Geben Sie beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung nicht beachtet wird, z.B. Dateipfade, Umgebungsvariablen oder Registrierungsschlüsseln und -werten, "StringComparison.OrdinalIgnoreCase" an. Geben Sie andernfalls beim Vergleichen von Bezeichnern, bei denen die Groß-/Kleinschreibung beachtet wird, "StringComparison.Ordinal" an.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386080.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+   <Name>Mithilfe der Zeichenfolgenlänge auf leere Zeichenfolgen prüfen</Name>
+   <Description>Um auf leere Zeichenfolgen zu prüfen, überprüfen Sie, ob String.Length gleich 0 (null) ist. Konstrukte wie "".Equals(someString) und String.Empty.Equals(someString) sind weniger effizient als das Testen der Zeichenfolgenlänge. Ersetzen Sie diese durch Überprüfungen für someString.Length == 0.</Description>
+   <Resolution Name="IsNullOrEmpty">Ersetzen Sie den Aufruf von {0} in {1} durch einen Aufruf von String.IsNullOrEmpty.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182279.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="UseLiteralsWhereAppropriate" Category="Microsoft.Performance" CheckId="CA1802">
+   <Name>Nach Möglichkeit Literale verwenden</Name>
+   <Description>Ziehen Sie Literale InitOnly-Feldern vor, wenn die Werte nicht zur Laufzeit berechnet werden müssen.</Description>
+   <Resolution Name="Default">Das Feld "{0}" ist als "static readonly" deklariert, wird jedoch mit dem konstanten Wert "{1}" initialisiert. Markieren Sie dieses Feld stattdessen als "const".</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182280.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="16.0.0.0" />
+  </Rule>
+  <Rule TypeName="VariableNamesShouldNotMatchFieldNames" Category="Microsoft.Maintainability" CheckId="CA1500">
+   <Name>Variablennamen sollten nicht mit Feldnamen übereinstimmen</Name>
+   <Description>Namen von Instanzfeldern und Variablen sollten innerhalb desselben Bereichs nicht identisch sein.</Description>
+   <Resolution Name="Local">"{0}", eine in "{1}" deklarierte Variable, weist denselben Namen wie ein Instanzenfeld für den Typ auf. Ändern Sie den Namen eines dieser Elemente.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182216.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="maintainabilityrules.dll" Version="16.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Kategorie</String>
+  <String Key="Certainty">Sicherheit</String>
+  <String Key="CollapseAll">Alle zuklappen</String>
+  <String Key="CheckId">Prüf-ID</String>
+  <String Key="Error">Fehler</String>
+  <String Key="Errors">Fehler</String>
+  <String Key="ExpandAll">Alle aufklappen</String>
+  <String Key="Help">Hilfe</String>
+  <String Key="Line">Zeile</String>
+  <String Key="Messages">Meldung(en)</String>
+  <String Key="LocationNotStoredInPdb">[Nicht in PDB gespeicherter Speicherort]</String>
+  <String Key="Project">Projekt</String>
+  <String Key="Resolution">Auflösung</String>
+  <String Key="Rule">Regel</String>
+  <String Key="RuleFile">Regeldatei</String>
+  <String Key="RuleDescription">Regelbeschreibung</String>
+  <String Key="Source">Quelle</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Ziel</String>
+  <String Key="Warning">Warnung</String>
+  <String Key="Warnings">Warnung(en)</String>
+  <String Key="ReportTitle">Code Analysis-Bericht</String>
+ </Localized>
+</FxCopReport>
